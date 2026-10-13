@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <title>Form sở thích</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f4f8;
+      }
+
+      .form-box {
+        width: 350px;
+        margin: 50px auto;
+        padding: 25px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #cccccc;
+      }
+
+      h2 {
+        text-align: center;
+        color: #2563eb;
+      }
+
+      label {
+        display: block;
+        margin-top: 12px;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        width: 95%;
+        padding: 8px;
+        margin-top: 5px;
+      }
+
+      button {
+        margin-top: 18px;
+        padding: 9px 14px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .submit {
+        background-color: #2563eb;
+        color: white;
+      }
+
+      .reset {
+        background-color: #dddddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-box">
+      <h2>Thông tin cá nhân</h2>
+
+      <form action="#" method="get">
+        <label for="yourname">Họ và tên:</label>
+        <input
+          type="text"
+          id="yourname"
+          name="yourname"
+          placeholder="Nhập họ và tên"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Nhập email"
+          required
+        />
+
+        <p>Sở thích:</p>
+        <label>
+          <input type="checkbox" name="hobby" value="music" />
+          Nghe nhạc
+        </label>
+        <label>
+          <input type="checkbox" name="hobby" value="sports" />
+          Thể thao
+        </label>
+        <label>
+          <input type="checkbox" name="hobby" value="travel" />
+          Du lịch
+        </label>
+
+        <button type="submit" class="submit">Gửi thông tin</button>
+        <button type="reset" class="reset">Nhập lại</button>
+      </form>
+    </div>
+  </body>
+</html>
